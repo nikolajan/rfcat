@@ -1,0 +1,49 @@
+{
+  "packages":
+  [
+    {
+      "name": "rfcat",
+      "maintainer": "RFCAT",
+      "websiteURL": "https://www.tindie.com/stores/rfcat/",
+      "email" : "rfcat.mail@gmail.com",
+      "platforms":
+      [
+
+{
+          "name": "RFCAT Boards",
+          "architecture": "nrf52",
+          "version": "1.2",
+          "category": "Contributed",
+          "url": "https://github.com/nikolajan/rfcat/raw/master/rfcat.zip",
+          "archiveFileName": "rfcat.zip",
+          "checksum": "SHA-256:b327970b02db9bba3ce506b9b4d330961232317cb286eb9986836c2ac16cec99",
+          "size": "16875414",
+          "help": {
+            "online": "https://www.tindie.com/stores/rfcat/"
+          },
+          "boards": [
+            {
+              "name": "RFCAT N32"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "adafruit",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "adafruit",
+              "name": "nrfjprog",
+              "version": "9.4.0"
+            }
+          ]
+        },
+		
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
