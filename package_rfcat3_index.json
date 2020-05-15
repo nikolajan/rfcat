@@ -1,0 +1,60 @@
+{
+  "packages":
+  [
+    {
+      "name": "rfcat",
+      "maintainer": "RFCAT",
+      "websiteURL": "https://www.tindie.com/stores/rfcat/",
+      "email" : "rfcat.mail@gmail.com",
+      "platforms":
+      [
+        {
+          "name": "RFCAT Boards",
+          "architecture": "nrf52",
+          "version": "1.2",
+          "category": "Contributed",
+          "url": "https://github.com/nikolajan/rfcat/raw/master/rfcat2.zip",
+          "archiveFileName": "rfcat2.zip",
+          "checksum": "SHA-256:bb3ffc1381713895bf5da3e0bfd7fb39f178c9dd6637bb8597c9e256d99e2dfe",
+          "size": "16873664",
+          "boards": [
+            {
+              "name": "RFCAT N32"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        }
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
