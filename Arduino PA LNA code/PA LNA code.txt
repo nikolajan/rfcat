@@ -1,0 +1,33 @@
+static void pa_lna_assist()
+{
+
+uint32_t err_code;
+
+    nrf_gpio_cfg_output(23);
+    nrf_gpio_pin_clear(23); //
+    nrf_gpio_cfg_output(22);
+    nrf_gpio_pin_clear(22); // 
+   
+    // Configure SoftDevice PA/LNA assist
+    ble_opt_t opt;
+    memset(&opt, 0, sizeof(ble_opt_t));
+    // Common PA/LNA config
+    opt.common_opt.pa_lna.gpiote_ch_id  = 0;         		// GPIOTE channel
+    opt.common_opt.pa_lna.ppi_ch_id_clr = 1;             	// PPI channel for pin clearing
+    opt.common_opt.pa_lna.ppi_ch_id_set = 0;             	// PPI channel for pin setting
+    
+    // PA config
+    opt.common_opt.pa_lna.pa_cfg.active_high = 1;                 // Set the pin to be active high
+    opt.common_opt.pa_lna.pa_cfg.enable      = 1;                 // Enable toggling
+    opt.common_opt.pa_lna.pa_cfg.gpio_pin    = 23;                // The GPIO pin to toggle
+  
+    // LNA config
+    opt.common_opt.pa_lna.lna_cfg.active_high  = 1;               // Set the pin to be active high
+    opt.common_opt.pa_lna.lna_cfg.enable       = 1;               // Enable toggling
+    opt.common_opt.pa_lna.lna_cfg.gpio_pin     = 22;              // The GPIO pin to toggle
+
+    err_code = sd_ble_opt_set(BLE_COMMON_OPT_PA_LNA, &opt);
+    Serial.println(err_code);
+}
+
+    pa_lna_assist(); // must be run after Bluefruit.begin
