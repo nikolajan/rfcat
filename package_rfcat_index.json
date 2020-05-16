@@ -13,8 +13,8 @@
           "architecture": "nrf52",
           "version": "1.2",
           "category": "Contributed",
-          "url": "https://github.com/nikolajan/rfcat/raw/master/rfcatv4.zip",
-          "archiveFileName": "rfcatv4.zip",
+          "url": "https://github.com/nikolajan/rfcat/raw/master/rfcat.zip",
+          "archiveFileName": "rfcat.zip",
           "checksum": "SHA-256:851839466c2dcff5126588025c9268f9255c2f23c2e64a99b3b46fea626c7b8c",
           "size": "16863020",
           "boards": [
