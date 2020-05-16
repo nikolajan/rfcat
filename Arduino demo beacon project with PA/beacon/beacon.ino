@@ -17,8 +17,8 @@
 // packet, which means you must provide a valid Manufacturer ID. Update
 // the field below to an appropriate value. For a list of valid IDs see:
 // https://www.bluetooth.com/specifications/assigned-numbers/company-identifiers
-// 0x004C is Apple (for example)
-#define MANUFACTURER_ID   0x004C 
+// 0xFFFF can be used for testing purposes
+#define MANUFACTURER_ID   0xFFFF 
 
 // AirLocate UUID: E2C56DB5-DFFB-48D2-B060-D0F5A71096E0
 uint8_t beaconUuid[16] = 
