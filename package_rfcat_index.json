@@ -15,8 +15,8 @@
           "category": "Contributed",
           "url": "https://github.com/nikolajan/rfcat/raw/master/rfcat.zip",
           "archiveFileName": "rfcat.zip",
-          "checksum": "SHA-256:851839466c2dcff5126588025c9268f9255c2f23c2e64a99b3b46fea626c7b8c",
-          "size": "16863020",
+          "checksum": "SHA-256:cc77cc6498b0b37b9c9728024c502ae4f9158ac600aab4548cf142264aaadaf3",
+          "size": "17409744",
           "boards": [
             {
               "name": "RFCAT N32"
